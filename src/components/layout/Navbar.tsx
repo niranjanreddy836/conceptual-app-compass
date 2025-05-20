@@ -30,6 +30,12 @@ const Navbar = () => {
             <Link to="/services" className="text-slate-200 hover:text-cyan-400 transition-colors">
               Services
             </Link>
+            <Link to="/portfolio" className="text-slate-200 hover:text-cyan-400 transition-colors">
+              Portfolio
+            </Link>
+            <Link to="/partners" className="text-slate-200 hover:text-cyan-400 transition-colors">
+              Partners
+            </Link>
             <Link to="/case-studies" className="text-slate-200 hover:text-cyan-400 transition-colors">
               Case Studies
             </Link>
@@ -82,6 +88,20 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Services
+            </Link>
+            <Link 
+              to="/portfolio" 
+              className="text-slate-200 hover:text-cyan-400 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Portfolio
+            </Link>
+            <Link 
+              to="/partners" 
+              className="text-slate-200 hover:text-cyan-400 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Partners
             </Link>
             <Link 
               to="/case-studies" 

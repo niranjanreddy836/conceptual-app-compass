@@ -1,6 +1,6 @@
 
 import Layout from "@/components/layout/Layout";
-import { Shield, Users, Globe, CheckCircle } from "lucide-react";
+import { Shield, Users, Globe, CheckCircle, Award, Landmark, Briefcase, Target } from "lucide-react";
 
 const About = () => {
   return (
@@ -61,8 +61,56 @@ const About = () => {
         </div>
       </section>
       
-      {/* Mission & Values */}
+      {/* Our Approach Section - New */}
       <section className="py-20 bg-slate-50 dark:bg-slate-800">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">
+              Our Approach
+            </h2>
+            <p className="text-lg text-slate-700 dark:text-slate-300">
+              We follow a proven methodology to identify, protect, and manage your cybersecurity needs.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-white dark:bg-slate-700 p-6 rounded-lg shadow-md text-center">
+              <div className="mx-auto h-16 w-16 bg-cyan-100 dark:bg-cyan-900 rounded-full flex items-center justify-center mb-4">
+                <Target className="h-8 w-8 text-cyan-600 dark:text-cyan-400" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">Assessment</h3>
+              <p className="text-slate-600 dark:text-slate-300">Comprehensive analysis of your security posture to identify vulnerabilities</p>
+            </div>
+            
+            <div className="bg-white dark:bg-slate-700 p-6 rounded-lg shadow-md text-center">
+              <div className="mx-auto h-16 w-16 bg-cyan-100 dark:bg-cyan-900 rounded-full flex items-center justify-center mb-4">
+                <Shield className="h-8 w-8 text-cyan-600 dark:text-cyan-400" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">Protection</h3>
+              <p className="text-slate-600 dark:text-slate-300">Implementation of tailored security solutions to safeguard your assets</p>
+            </div>
+            
+            <div className="bg-white dark:bg-slate-700 p-6 rounded-lg shadow-md text-center">
+              <div className="mx-auto h-16 w-16 bg-cyan-100 dark:bg-cyan-900 rounded-full flex items-center justify-center mb-4">
+                <Globe className="h-8 w-8 text-cyan-600 dark:text-cyan-400" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">Monitoring</h3>
+              <p className="text-slate-600 dark:text-slate-300">Continuous oversight to detect and respond to emerging threats</p>
+            </div>
+            
+            <div className="bg-white dark:bg-slate-700 p-6 rounded-lg shadow-md text-center">
+              <div className="mx-auto h-16 w-16 bg-cyan-100 dark:bg-cyan-900 rounded-full flex items-center justify-center mb-4">
+                <Award className="h-8 w-8 text-cyan-600 dark:text-cyan-400" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">Optimization</h3>
+              <p className="text-slate-600 dark:text-slate-300">Continuous improvement of security measures to address evolving threats</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Mission & Values */}
+      <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">
@@ -132,7 +180,7 @@ const About = () => {
       </section>
       
       {/* Team Section */}
-      <section className="py-20">
+      <section className="py-20 bg-slate-50 dark:bg-slate-800">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">
