@@ -12,44 +12,32 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-slate-900/95 backdrop-blur-sm sticky top-0 z-50 border-b border-slate-700/50">
+    <nav className="bg-[#b5deff]/95 backdrop-blur-sm sticky top-0 z-50 border-b border-[#b7dcf9]/50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <Link to="/" className="text-2xl font-bold text-white">
-            <span className="text-cyan-500">Cyber</span>Shield
+          <Link to="/" className="text-2xl font-bold text-slate-800 transition-all duration-300 hover:scale-105">
+            <span className="text-[#0073e6]">Primitive</span>Wave
           </Link>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            <Link to="/" className="text-slate-200 hover:text-cyan-400 transition-colors">
+            <Link to="/" className="text-slate-700 hover:text-[#0073e6] transition-colors duration-300">
               Home
             </Link>
-            <Link to="/about" className="text-slate-200 hover:text-cyan-400 transition-colors">
+            <Link to="/about" className="text-slate-700 hover:text-[#0073e6] transition-colors duration-300">
               About
             </Link>
-            <Link to="/services" className="text-slate-200 hover:text-cyan-400 transition-colors">
-              Services
-            </Link>
-            <Link to="/portfolio" className="text-slate-200 hover:text-cyan-400 transition-colors">
+            <Link to="/portfolio" className="text-slate-700 hover:text-[#0073e6] transition-colors duration-300">
               Portfolio
             </Link>
-            <Link to="/partners" className="text-slate-200 hover:text-cyan-400 transition-colors">
+            <Link to="/partners" className="text-slate-700 hover:text-[#0073e6] transition-colors duration-300">
               Partners
-            </Link>
-            <Link to="/case-studies" className="text-slate-200 hover:text-cyan-400 transition-colors">
-              Case Studies
-            </Link>
-            <Link to="/testimonials" className="text-slate-200 hover:text-cyan-400 transition-colors">
-              Testimonials
-            </Link>
-            <Link to="/blog" className="text-slate-200 hover:text-cyan-400 transition-colors">
-              Blog
             </Link>
           </div>
 
           <div className="hidden md:block">
             <Link to="/contact">
-              <Button variant="secondary" className="bg-cyan-600 hover:bg-cyan-700 text-white">
+              <Button variant="secondary" className="bg-[#0073e6] hover:bg-[#0059b3] text-white transition-all duration-300 transform hover:scale-105">
                 Contact Us
               </Button>
             </Link>
@@ -58,7 +46,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button 
             onClick={toggleMenu}
-            className="md:hidden text-slate-200 hover:text-cyan-400 transition-colors"
+            className="md:hidden text-slate-700 hover:text-[#0073e6] transition-colors"
             aria-label="Toggle menu"
           >
             <Menu />
@@ -67,66 +55,38 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 flex flex-col space-y-4">
+          <div className="md:hidden mt-4 pb-4 flex flex-col space-y-4 animate-fade-in">
             <Link 
               to="/" 
-              className="text-slate-200 hover:text-cyan-400 transition-colors" 
+              className="text-slate-700 hover:text-[#0073e6] transition-colors" 
               onClick={() => setIsMenuOpen(false)}
             >
               Home
             </Link>
             <Link 
               to="/about" 
-              className="text-slate-200 hover:text-cyan-400 transition-colors"
+              className="text-slate-700 hover:text-[#0073e6] transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </Link>
             <Link 
-              to="/services" 
-              className="text-slate-200 hover:text-cyan-400 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Services
-            </Link>
-            <Link 
               to="/portfolio" 
-              className="text-slate-200 hover:text-cyan-400 transition-colors"
+              className="text-slate-700 hover:text-[#0073e6] transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Portfolio
             </Link>
             <Link 
               to="/partners" 
-              className="text-slate-200 hover:text-cyan-400 transition-colors"
+              className="text-slate-700 hover:text-[#0073e6] transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Partners
             </Link>
             <Link 
-              to="/case-studies" 
-              className="text-slate-200 hover:text-cyan-400 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Case Studies
-            </Link>
-            <Link 
-              to="/testimonials" 
-              className="text-slate-200 hover:text-cyan-400 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Testimonials
-            </Link>
-            <Link 
-              to="/blog" 
-              className="text-slate-200 hover:text-cyan-400 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Blog
-            </Link>
-            <Link 
               to="/contact" 
-              className="text-slate-200 hover:text-cyan-400 transition-colors"
+              className="text-slate-700 hover:text-[#0073e6] transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
