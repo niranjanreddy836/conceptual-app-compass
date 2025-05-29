@@ -72,7 +72,7 @@ const Partners = () => {
           
           {/* Additional Partner Logos Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-16">
-            {[...Array(9)].map((_, i) => (
+            {[...Array(0)].map((_, i) => (
               <div key={i} className="bg-white dark:bg-slate-800 shadow-sm border border-slate-200 dark:border-slate-700 rounded-lg h-24 flex items-center justify-center transition-all duration-300 hover:shadow-md">
                 <div className="w-3/4 h-8 bg-slate-200 dark:bg-slate-700 rounded"></div>
               </div>
