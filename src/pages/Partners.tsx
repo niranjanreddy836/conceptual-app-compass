@@ -31,10 +31,49 @@ const Partners = () => {
             </p>
           </div>
           
+          {/* Featured Partners with Logos */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div className="bg-white dark:bg-slate-800 shadow-lg border border-slate-200 dark:border-slate-700 rounded-lg p-8 flex flex-col items-center transition-all duration-300 hover:shadow-xl hover:scale-105">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Veeam_logo.svg/320px-Veeam_logo.svg.png" 
+                alt="Veeam Logo" 
+                className="h-16 w-auto mb-4 object-contain"
+              />
+              <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-2">Veeam</h3>
+              <p className="text-slate-600 dark:text-slate-300 text-center">
+                Leading provider of backup, recovery and data management solutions for virtual, physical and cloud environments.
+              </p>
+            </div>
+            
+            <div className="bg-white dark:bg-slate-800 shadow-lg border border-slate-200 dark:border-slate-700 rounded-lg p-8 flex flex-col items-center transition-all duration-300 hover:shadow-xl hover:scale-105">
+              <img 
+                src="https://www.arctera.com/wp-content/uploads/2023/06/arctera-logo-horizontal-blue.png" 
+                alt="Arctera Logo" 
+                className="h-16 w-auto mb-4 object-contain"
+              />
+              <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-2">Arctera</h3>
+              <p className="text-slate-600 dark:text-slate-300 text-center">
+                Cloud-native data protection and cyber resilience platform delivering comprehensive backup and recovery solutions.
+              </p>
+            </div>
+            
+            <div className="bg-white dark:bg-slate-800 shadow-lg border border-slate-200 dark:border-slate-700 rounded-lg p-8 flex flex-col items-center transition-all duration-300 hover:shadow-xl hover:scale-105">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Fortinet_logo.svg/320px-Fortinet_logo.svg.png" 
+                alt="Fortinet Logo" 
+                className="h-16 w-auto mb-4 object-contain"
+              />
+              <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-2">Fortinet</h3>
+              <p className="text-slate-600 dark:text-slate-300 text-center">
+                Global leader in cybersecurity solutions providing network security, endpoint protection, and threat intelligence.
+              </p>
+            </div>
+          </div>
+          
+          {/* Additional Partner Logos Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-16">
-            {/* Partner logos - using placeholder divs */}
-            {[...Array(12)].map((_, i) => (
-              <div key={i} className="bg-white dark:bg-slate-800 shadow-sm border border-slate-200 dark:border-slate-700 rounded-lg h-24 flex items-center justify-center">
+            {[...Array(9)].map((_, i) => (
+              <div key={i} className="bg-white dark:bg-slate-800 shadow-sm border border-slate-200 dark:border-slate-700 rounded-lg h-24 flex items-center justify-center transition-all duration-300 hover:shadow-md">
                 <div className="w-3/4 h-8 bg-slate-200 dark:bg-slate-700 rounded"></div>
               </div>
             ))}
@@ -95,7 +134,7 @@ const Partners = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl font-bold text-white mb-6">
-                  Become a CyberShield Partner
+                  Become a PrimitiveWave Partner
                 </h2>
                 <p className="text-slate-300 mb-6">
                   Join our network of technology and service partners to expand your offerings and deliver enhanced value to your customers.
@@ -159,67 +198,6 @@ const Partners = () => {
                     </p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Featured Client Success Stories */}
-      <section className="py-20 bg-slate-50 dark:bg-slate-800">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">
-              Partner Success Stories
-            </h2>
-            <p className="text-lg text-slate-700 dark:text-slate-300">
-              See how our partnerships have delivered exceptional results for our clients.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white dark:bg-slate-700 rounded-lg overflow-hidden shadow-md">
-              <div className="h-48 bg-slate-200 dark:bg-slate-600"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
-                  Cloud Security Alliance
-                </h3>
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
-                  Our partnership with CSA has enabled us to develop cutting-edge cloud security methodologies and frameworks.
-                </p>
-                <a href="#" className="inline-flex items-center text-cyan-600 hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300 font-medium">
-                  Learn More <LinkIcon className="ml-2 h-4 w-4" />
-                </a>
-              </div>
-            </div>
-            
-            <div className="bg-white dark:bg-slate-700 rounded-lg overflow-hidden shadow-md">
-              <div className="h-48 bg-slate-200 dark:bg-slate-600"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
-                  AWS Advanced Consulting
-                </h3>
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
-                  Our AWS partnership has allowed us to deliver secure cloud transformations for enterprise clients worldwide.
-                </p>
-                <a href="#" className="inline-flex items-center text-cyan-600 hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300 font-medium">
-                  Learn More <LinkIcon className="ml-2 h-4 w-4" />
-                </a>
-              </div>
-            </div>
-            
-            <div className="bg-white dark:bg-slate-700 rounded-lg overflow-hidden shadow-md">
-              <div className="h-48 bg-slate-200 dark:bg-slate-600"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
-                  Microsoft Security Partner
-                </h3>
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
-                  Our Microsoft partnership enhances our ability to secure complex enterprise environments and Azure workloads.
-                </p>
-                <a href="#" className="inline-flex items-center text-cyan-600 hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300 font-medium">
-                  Learn More <LinkIcon className="ml-2 h-4 w-4" />
-                </a>
               </div>
             </div>
           </div>
