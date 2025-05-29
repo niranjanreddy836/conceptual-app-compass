@@ -1,4 +1,3 @@
-
 import Layout from "@/components/layout/Layout";
 import { Shield, Users, Globe, CheckCircle, Award, Briefcase, Target, Server } from "lucide-react";
 
@@ -22,7 +21,7 @@ const About = () => {
       {/* Company Overview */}
       <section className="py-20 animate-fade-in delay-150">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="max-w-4xl mx-auto">
             <div className="transform transition-all duration-500 hover:scale-102">
               <h2 className="text-3xl font-bold text-slate-800 mb-6">
                 Our Mission
@@ -33,26 +32,6 @@ const About = () => {
               <p className="text-lg text-slate-700">
                 We operate as a trusted software product and partnering with top-tier global vendors to deliver advanced, reliable, and scalable solutions that protect your critical data assets and ensure operational continuity in the face of evolving cyber threats.
               </p>
-            </div>
-            <div className="bg-[#b7dcf9]/30 p-8 rounded-lg border border-[#b7dcf9] shadow-lg transition-all duration-500 hover:shadow-xl">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center transform transition-all duration-300 hover:scale-105">
-                  <div className="text-4xl font-bold text-[#0073e6] mb-2">150+</div>
-                  <p className="text-slate-700">Enterprise Clients</p>
-                </div>
-                <div className="text-center transform transition-all duration-300 hover:scale-105">
-                  <div className="text-4xl font-bold text-[#0073e6] mb-2">25+</div>
-                  <p className="text-slate-700">Countries Served</p>
-                </div>
-                <div className="text-center transform transition-all duration-300 hover:scale-105">
-                  <div className="text-4xl font-bold text-[#0073e6] mb-2">200+</div>
-                  <p className="text-slate-700">Technology Experts</p>
-                </div>
-                <div className="text-center transform transition-all duration-300 hover:scale-105">
-                  <div className="text-4xl font-bold text-[#0073e6] mb-2">99.9%</div>
-                  <p className="text-slate-700">Client Retention</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

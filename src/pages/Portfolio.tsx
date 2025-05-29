@@ -1,7 +1,6 @@
 
 import Layout from "@/components/layout/Layout";
-import { Shield, Cloud, Server, Network, Layers, Code, Database, ArrowRight } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
+import { Shield, Cloud, Server, Network, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -53,51 +52,6 @@ const services = [
       "Unified Communications",
       "Network Monitoring and Management"
     ]
-  }
-];
-
-const projects = [
-  {
-    id: "financial-transformation",
-    title: "Financial Services Digital Transformation",
-    category: "Technology Consulting",
-    image: "financial-services.jpg",
-    description: "Helped a leading bank modernize their legacy systems while maintaining regulatory compliance across multiple regions."
-  },
-  {
-    id: "healthcare-cloud",
-    title: "Healthcare Cloud Migration",
-    category: "Cloud Solutions",
-    image: "healthcare-cloud.jpg",
-    description: "Securely migrated a healthcare provider's critical applications to the cloud while ensuring HIPAA compliance."
-  },
-  {
-    id: "retail-network",
-    title: "Retail Chain Network Upgrade",
-    category: "Network Transformation",
-    image: "retail-network.jpg",
-    description: "Deployed SD-WAN technology across 500+ retail locations, improving reliability and reducing costs."
-  },
-  {
-    id: "manufacturing-datacenter",
-    title: "Manufacturing Data Center Consolidation",
-    category: "Data Center Modernization",
-    image: "manufacturing-datacenter.jpg",
-    description: "Consolidated multiple legacy data centers into a modern, efficient infrastructure for a global manufacturer."
-  },
-  {
-    id: "financial-security",
-    title: "Financial Services Security Enhancement",
-    category: "Technology Consulting",
-    image: "financial-security.jpg",
-    description: "Implemented a comprehensive security framework for a financial institution, protecting sensitive customer data."
-  },
-  {
-    id: "retail-digital",
-    title: "Retail Digital Experience Platform",
-    category: "Cloud Solutions",
-    image: "retail-digital.jpg",
-    description: "Built a scalable cloud platform supporting omnichannel customer experiences for a major retail brand."
   }
 ];
 
@@ -163,52 +117,6 @@ const Portfolio = () => {
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      
-      {/* Projects Section */}
-      <section id="projects" className="py-20 bg-[#b7dcf9]/10 animate-fade-in delay-300">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-800 mb-6">
-              Featured Projects
-            </h2>
-            <p className="text-lg text-slate-700">
-              Explore our successful implementations and see how we've helped organizations achieve their technology goals.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <Card 
-                key={project.id} 
-                className="overflow-hidden border border-[#b7dcf9] transition-all duration-300 hover:shadow-lg group animate-fade-in"
-                style={{ animationDelay: `${150 * (index + 1)}ms` }}
-              >
-                <div className="h-48 bg-[#b5deff]/30 relative overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Layers className="h-16 w-16 text-[#0073e6] opacity-30" />
-                  </div>
-                </div>
-                <CardHeader>
-                  <div className="text-sm text-[#0073e6] mb-2">{project.category}</div>
-                  <CardTitle className="text-xl text-slate-800 group-hover:text-[#0073e6] transition-colors">
-                    {project.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-slate-700">
-                    {project.description}
-                  </CardDescription>
-                </CardContent>
-                <CardFooter>
-                  <Button variant="ghost" className="text-[#0073e6] p-0 hover:text-[#0059b3] hover:bg-transparent transition-colors">
-                    View Project Details →
-                  </Button>
-                </CardFooter>
-              </Card>
             ))}
           </div>
         </div>
